@@ -1,0 +1,144 @@
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  
+  /*   color variables */
+/*   border radius */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Mukta, sans-serif;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #4f546c;
+  font-size: 0.9rem;
+  background-color: #f9fbff;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+}
+table thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+table th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+table td {
+  padding: 1rem 2rem;
+}
+table a {
+  text-decoration: none;
+  color: #2962ff;
+}
+table .status {
+  border-radius: 0.2rem;
+  background-color: red;
+  padding: 0.2rem 1rem;
+  text-align: center;
+}
+table .status-pending {
+  background-color: blue;
+  color: white;
+}
+table .status-paid {
+  background-color: #12AD2B;
+  color: white;
+}
+table .status-unpaid {
+  background-color: orange;
+  color: White;
+}
+table .amount {
+  text-align: right;
+}
+table tr:nth-child(even) {
+  background-color: #f4f6fb;
+}
+
+</style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Invoice</th>
+        <th>Company</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#">NA</a></td>
+        <td>Pratham</td>
+        <td>01/04/2022</td>
+        <td>
+          <p class="status status-unpaid">Not Completed</p>
+        </td>
+        <td class="amount">22,000</td>
+        <td><button ><img src="edit.png" width="25px" height="25px";></button><button><img src="trash.png" width="25px" height="25px"></button></td>
+      </tr>
+      <tr>
+        <td><a href="#">INV_1</a></td>
+        <td>Doe</td>
+        <td>01/04/2021</td>
+        <td>
+          <p class="status status-paid">Completed</p>
+        </td>
+        <td class="amount">23,000</td>
+        <td><button ><img src="edit.png" width="25px" height="25px";></button><button><img src="trash.png" width="25px" height="25px"></button></td>
+      </tr>
+      <tr>
+        <td><a href="#">INV_2</a></td>
+        <td>Chritian</td>
+        <td>01/02/2021</td>
+        <td>
+          <p class="status status-pending">Processing</p>
+        </td>
+        <td class="amount">28,000</td>
+        <td><button ><img src="edit.png" width="25px" height="25px";></button><button><img src="trash.png" width="25px" height="25px"></button></td>
+      </tr>
+      <tr>
+        <td><a href="#">INV_3</a></td>
+        <td>Kiran</td>
+        <td>12/30/2020</td>
+        <td>
+          <p class="status status-pending">Processing</p>
+        </td>
+        <td class="amount">25,000</td>
+        <td><button ><img src="edit.png" width="25px" height="25px";></button><button><img src="trash.png" width="25px" height="25px"></button></td>
+      </tr>
+      <tr>
+        <td><a href="#">INV_4</a></td>
+        <td>Kite</td>
+        <td>12/18/2020</td>
+        <td>
+          <p class="status status-paid">Completed</p>
+        </td>
+        <td class="amount">22,000</td>
+        <td><button ><img src="edit.png" width="25px" height="25px";></button><button><img src="trash.png" width="25px" height="25px"></button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
